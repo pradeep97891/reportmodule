@@ -1,0 +1,42 @@
+{
+  "name": "reportmodule",
+  "version": "0.0.1",
+  "subpath": "./*",
+  "peerDependencies": {
+    "@angular/animations": "^9.1.13",
+    "@angular/common": "^9.1.13",
+    "@angular/compiler": "^9.1.13",
+    "@angular/core": "^9.1.13",
+    "@angular/forms": "^9.1.13",
+    "@angular/platform-browser": "^9.1.13",
+    "@angular/platform-browser-dynamic": "^9.1.13",
+    "@angular/router": "^9.1.13",
+    "@types/file-saver": "^2.0.2",
+    "angular-feather": "^6.1.0",
+    "apexcharts": "^3.24.0",
+    "bootstrap": "^4.6.0",
+    "feather-icons": "^4.28.0",
+    "file-saver": "^2.0.5",
+    "jquery": "^3.6.0",
+    "jquery-ui": "^1.12.1",
+    "ng-apexcharts": "^1.5.7",
+    "ngx-material-timepicker": "^5.5.3",
+    "ngx-toastr": "^13.2.0",
+    "popper": "^1.0.1",
+    "rxjs": "~6.5.4",
+    "zone.js": "~0.10.2"
+  },
+  "dependencies": {
+    "tslib": "^1.14.1"
+  },
+  "main": "bundles/reportmodule.umd.js",
+  "module": "fesm5/reportmodule.js",
+  "es2015": "fesm2015/reportmodule.js",
+  "esm5": "esm5/reportmodule.js",
+  "esm2015": "esm2015/reportmodule.js",
+  "fesm5": "fesm5/reportmodule.js",
+  "fesm2015": "fesm2015/reportmodule.js",
+  "typings": "reportmodule.d.ts",
+  "metadata": "reportmodule.metadata.json",
+  "sideEffects": false
+}

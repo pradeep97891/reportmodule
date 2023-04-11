@@ -1,0 +1,74 @@
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+export declare class AppService {
+    private http;
+    createReports: boolean;
+    isEditReport: any;
+    showReportData: any;
+    selectedMenu: any;
+    currentBasedOn: any;
+    updateValue: any;
+    expandList(id: number, listData: any): void;
+    listService(list: any, pagination?: boolean): any;
+    chartModules: object;
+    expandAll: any;
+    constructor(http: HttpClient);
+    httpPost(inputData: any, actionName: string, url: any): Observable<any>;
+    /**
+     * Expand all list row
+     * @param listData
+     */
+    expandContainerAll(listData: any): void;
+    dashboardService(moduleName: string, inputData: any, actionName: string): Observable<any>;
+    downloadExcel(inputData: any, actionName: string, url: any, fileName: string): any;
+    initAuth(): Promise<any>;
+    getSubModules(requestData: any): Observable<any>;
+    getDropDownData(requestData: any, url: string): Observable<any>;
+    handelShowReport(requestData: any, url: string): Observable<any>;
+    viewUserActionLog(requestData: any): Observable<any>;
+    getAllFieldsConversion(requestData: any): Observable<any>;
+    handelSaveReportConversion(requestData: any): Observable<any>;
+    getSavedReports(requestData: any): Observable<any>;
+    scheduleSavedReports(requestData: any): Observable<any>;
+    getScheduleDropdownData(requestData: any, url: string): Observable<any>;
+    getTravelAgency(requestData: any): Observable<any>;
+    getUserType(requestData: any): Observable<any>;
+    getCountryVal(requestData: any): Observable<any>;
+    getSectorVal(requestData: any): Observable<any>;
+    getSectorPosVal(requestData: any): Observable<any>;
+    getposVal(requestData: any): Observable<any>;
+    getStatusRequest(requestData: any): Observable<any>;
+    getStatusRequestVal(requestData: any): Observable<any>;
+    getCurrencyValues(requestData: any): Observable<any>;
+    getGroupCategoryVal(requestData: any): Observable<any>;
+    getScheduleSavedReportMessage(requestData: any): Observable<any>;
+    getDataHistoryDetails(requestData: any): Observable<any>;
+    getDeleteReports(requestData: any): Observable<any>;
+    getSavedReportDelete(requestData: any): Observable<any>;
+    handleAllReporttype(requestData: any): Observable<any>;
+    getSavedReportDetails(requestData: any): Observable<any>;
+    getAllReportsType(requestData: any): Observable<any>;
+    dummyResponse(requestData: any): Observable<Object>;
+    getAllFieldConditions(requestData: any, selectMenu: any): Observable<any>;
+    getMenuResponse(requestData: any): Observable<any>;
+    savedReportCreation(requestData: any): Observable<any>;
+    savedReportupdate(requestData: any): Observable<any>;
+    savedReportDelete(requestData: any): Observable<any>;
+    savedReportDeleteReqData(requestData: any): Observable<any>;
+    reportUserNameType(requestData: any, reportName: any): Observable<any>;
+    statusRequestService(requestData: any, reportName: any): Observable<any>;
+    getDataFieldCondition(requestData: any, reportName: any): Observable<any>;
+    autoCompleteData(requestData: any, reportName: any): Observable<any>;
+    userActionDropDown(requestData: any): Observable<any>;
+    userActionLog(requestData: any, url: string): Observable<any>;
+    revenueAnalysisRequest(requestData: any): Observable<any>;
+    trendYearRequest(requestData: any): Observable<any>;
+    trendYearRequestComparision(requestData: any): Observable<any>;
+    pipelineDepartureRequest(requestData: any): Observable<any>;
+    authenticationAndAuthorization(requestData: any): Observable<any>;
+    getReportKeyData(requestData: any): Observable<any>;
+    getSubModuleData(requestData: any): Observable<any>;
+    getSavedReportData(): Observable<Object>;
+    getAllFieldsConditions(requestData: any): Observable<any>;
+    getMultiSelectOption(requestData: any, responseDetail: string): Observable<any>;
+}

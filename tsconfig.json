@@ -1,0 +1,37 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "es2015",
+    "module": "es2015",
+    "outDir": "dist",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "reportmodule": [
+        "dist/reportmodule/reportmodule",
+        "dist/reportmodule"
+      ],
+      "app": [
+        "dist/app/app",
+        "dist/app"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  }
+}
